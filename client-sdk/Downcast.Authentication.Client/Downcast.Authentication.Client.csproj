@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PackageId>Downcast.Authentication.Client</PackageId>
+        <PackageVersion>0.0.1</PackageVersion>
+        <Authors>Mihail Brinza</Authors>
+        <Description>
+            Rest client for user manager service
+        </Description>
+        <RepositoryUrl>https://github.com/down-cast/authentication-api</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>user</PackageTags>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Refit" Version="6.3.2" />
+        <PackageReference Include="Downcast.SessionManager.SDK.Client" Version="0.0.4" />
+        <PackageReference Include="Downcast.UserManager.Client" Version="0.0.1" />
+    </ItemGroup>
+
+</Project>

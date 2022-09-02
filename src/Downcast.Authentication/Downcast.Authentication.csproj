@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Downcast.Common.Errors" Version="0.0.13" />
+      <PackageReference Include="Downcast.SessionManager.SDK.Authentication.Extensions" Version="0.0.5" />
+      <PackageReference Include="Downcast.SessionManager.SDK.Client" Version="0.0.4" />
+      <PackageReference Include="Downcast.UserManager.Client" Version="0.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Downcast.Authentication.Model\Downcast.Authentication.Model.csproj" />
+    </ItemGroup>
+
+</Project>

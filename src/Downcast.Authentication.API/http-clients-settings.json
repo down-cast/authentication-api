@@ -1,0 +1,38 @@
+{
+  "SessionManagerClient": {
+    "ClientName": "session-manager-api",
+    "ConnectionString": "https://localhost:7205",
+    "CircuitBreakerPolicyOptions": {
+      "Enabled": true,
+      "ExceptionsUntilBreak": 5,
+      "BreakDuration": "00:01:00"
+    },
+    "RetryPolicyOptions": {
+      "Enabled": true,
+      "RetryCount": 3
+    },
+    "TimeoutPolicyOptions": {
+      "Enabled": true,
+      "TimeoutAfter": "00:15:00",
+      "TimeoutStrategy": "Optimistic"
+    }
+  },
+  "UserManagerClient": {
+    "ClientName": "user-manager-api",
+    "ConnectionString": "https://localhost:7200",
+    "CircuitBreakerPolicyOptions": {
+      "Enabled": true,
+      "ExceptionsUntilBreak": 5,
+      "BreakDuration": "00:01:00"
+    },
+    "RetryPolicyOptions": {
+      "Enabled": true,
+      "RetryCount": 3
+    },
+    "TimeoutPolicyOptions": {
+      "Enabled": true,
+      "TimeoutAfter": "00:15:00",
+      "TimeoutStrategy": "Optimistic"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Downcast.Common.Errors.Handler" Version="0.0.7" />
+        <PackageReference Include="Downcast.Common.Logging" Version="0.0.7" />
+        <PackageReference Include="Downcast.SessionManager.SDK.Authentication.Extensions" Version="0.0.5" />
+        <PackageReference Include="Downcast.SessionManager.SDK.Authentication.Handler" Version="0.0.4" />
+        <PackageReference Include="Downcast.SessionManager.SDK.Extensions" Version="0.0.2" />
+        <PackageReference Include="Downcast.UserManager.Client.DependencyInjection" Version="0.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Downcast.Authentication.Model\Downcast.Authentication.Model.csproj" />
+      <ProjectReference Include="..\Downcast.Authentication\Downcast.Authentication.csproj" />
+    </ItemGroup>
+    
+</Project>
